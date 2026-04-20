@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jungle Runner</title>
+  <title>Jungle Runner PRO</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- START SCREEN -->
+<div id="startScreen">
+  <h1>🌴 Jungle Runner</h1>
+  <button onclick="startGame()">▶ Start Game</button>
+</div>
+
+<!-- GAME -->
 <div id="game">
+
   <div id="hud">
-    Score: <span id="score">0</span> |
-    Coins: <span id="coins">0</span> |
+    🏆 <span id="score">0</span>
+    🪙 <span id="coins">0</span>
     ❤️ <span id="lives">5</span>
   </div>
 
+  <div id="ground"></div>
   <div id="player"></div>
+
+</div>
+
+<!-- GAME OVER -->
+<div id="gameOver">
+  <h2>Game Over</h2>
+  <button onclick="restart()">Restart</button>
 </div>
 
 <script src="script.js"></script>
